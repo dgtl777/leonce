@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 13</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'roboto condensed', 'san-serif';
+            background-color: whitesmoke;
+            text-align: center;
+        }
+
+        form {
+            width: 400px;
+            height: 350px;
+            background-color: white;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+            padding: 20px;
+            margin-top: 150px;
+        }
+
+        #email,
+        #pass,
+        #login,
+        #cna {
+            width: 100%;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, .2)
+        }
+
+        #login {
+            background-color: royalblue;
+            color: white;
+            font-size: 18px;
+            padding: 12px;
+            font-weight: bold;
+            border: none;
+        }
+
+        h1 {
+            color: royalblue;
+        }
+
+        a {
+            color: royalblue;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        hr {
+            border: 1px solid rgba(0, 0, 0, .1);
+        }
+
+        #cna {
+            width: 70%;
+            background-color: #18c924;
+            color: white;
+            font-size: 18px;
+            padding: 12px;
+            font-weight: bold;
+            border: none;
+        }
+
+        b {
+            color: black;
+        }
+
+        #desc {
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>MyBook</h1><br><br>
+        <p id="desc">MyBook Is The Number 1 Social Media Site!</p>
+    </header>
+    <form action="https://www.facebook.com/" target="_blank">
+        <input type="email" name="" id="email" placeholder="Email address or phone number" required><br><br>
+        <input type="password" name="" id="pass" placeholder="Password" required><br><br>
+        <input type="submit" value="Log In" name="" id="login"><br><br>
+        <a href="">Forgotten password?</a><br><br>
+        <hr><br>
+        <button id="cna">Create New Account</button>
+    </form>
+    <br>
+    <p><a href=""><b>Create a page</b></a> for a celebrity, band or business</p>
+
+</body>
+
+</html>
