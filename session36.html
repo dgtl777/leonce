@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 36</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(palegreen, yellow);
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="score">Score: 0</h1>
+        <h1>Quiz App</h1>
+    </header>
+    <h3>1. Who is the current richest person in the world?</h3>
+    <label for="">Elon Musk</label>
+    <input type="radio" name="rich" id="" value="Elon">
+    <label for="">Bill Gates</label>
+    <input type="radio" name="rich" id="" value="Bill"><br><br>
+    <label for="">Jeff Bezos</label>
+    <input type="radio" name="rich" id="" value="Jeff">
+    <label for="">Carlos Slim</label>
+    <input type="radio" name="rich" id="" value="Carlos">
+
+    <h3>2. Which is the highest populated country in the world?</h3>
+    <label for="">India</label>
+    <input type="radio" name="country" id="" value="India">
+    <label for="">China</label>
+    <input type="radio" name="country" id="" value="China"><br><br>
+    <label for="">Japan</label>
+    <input type="radio" name="country" id="" value="Japan">
+    <label for="">America</label>
+    <input type="radio" name="country" id="" value="America">
+
+    <h3>3. Which is the longest river in the world?</h3>
+    <label for="">Mississippi</label>
+    <input type="radio" name="river" id="" value="Mississippi">
+    <label for="">Brahmaputra</label>
+    <input type="radio" name="river" id="" value="Brahmaputra"><br><br>
+    <label for="">Nile</label>
+    <input type="radio" name="river" id="" value="Nile">
+    <label for="">Amazons</label>
+    <input type="radio" name="river" id="" value="Amazon">
+
+    <h3>4. Which video game is played the most?</h3>
+    <label for="">Tetris</label>
+    <input type="radio" name="game" id="" value="Tetris">
+    <label for="">Fortnite</label>
+    <input type="radio" name="game" id="" value="Fortnite"><br><br>
+    <label for="">Roblox</label>
+    <input type="radio" name="game" id="" value="Roblox">
+    <label for="">Minecraft</label>
+    <input type="radio" name="game" id="" value="Minecraft">
+
+    <h3>5. When did the first star wars movie get released?</h3>
+    <label for="">1977</label>
+    <input type="radio" name="film" id="" value="1977">
+    <label for="">1975</label>
+    <input type="radio" name="film" id="" value="1975"><br><br>
+    <label for="">1967</label>
+    <input type="radio" name="film" id="" value="1967">
+    <label for="">1999</label>
+    <input type="radio" name="film" id="" value="1999"><br><br>
+
+    <button onclick="check()">check answer</button>
+
+</body>
+<script>
+    var score = 0;
+    function check() {
+        var rich = document.querySelector('input[name="rich"]:checked').value;
+        if (rich == "Elon") {
+            score = score + 1;
+        }
+        var country = document.querySelector('input[name="country"]:checked').value;
+        if (country == "China") {
+            score = score + 1;
+        }
+        var river = document.querySelector('input[name="river"]:checked').value;
+        if (river == 'Nile') {
+            score = score + 1;
+        }
+        var game = document.querySelector('input[name="game"]:checked').value;
+        if (game == "Tetris") {
+            score = score + 1;
+        }
+        var film = document.querySelector('input[name="film"]:checked').value;
+        if (film == "1977") {
+            score = score + 1;
+        }
+        document.getElementById("score").innerText =
+            "Score: " + score;
+    }
+</script>
+
+</html>
